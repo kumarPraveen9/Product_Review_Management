@@ -42,10 +42,13 @@ namespace Product_Review_Management
                 Console.WriteLine("Product ID : "+ list.ProductID + "UserID : "+ list.UserID+ "Rating : "+list.Rating + "Review : "+ list.Review+ "IsLike : "+ list.IsLike);
             }*/
             Management mn = new Management();
-           // mn.top3Records(pr);
-            //mn.SelectRecords(pr);
-         // mn.RetriveRecords(pr);
-            mn.SelectiveColumns(pr);
+            // mn.top3Records(pr);
+            // mn.SelectRecords(pr);
+            //mn.RetriveRecords(pr);
+            //mn.SelectiveColumns(pr);
+            // mn.skipRecords(pr);
+            Data_table d = new Data_table();
+            d.insertdata();
         }
 
        
