@@ -27,5 +27,12 @@ namespace Product_Review_Management
                 Console.WriteLine("Product ID : " + list.ProductID + "UserID : " + list.UserID + "Rating : " + list.Rating + "Review : " + list.Review + "IsLike : " + list.IsLike);
             }
         }
+        
+         public void RetriveRecords(List<Product_review> lpr)
+        {
+            var recordData = (from p in lpr where p.ProductID != null select p.Review).Distinct().Count();
+            Console.WriteLine("the count of types of review is: "+recordData);
+
+        }
     }
 }
