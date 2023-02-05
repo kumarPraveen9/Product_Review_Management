@@ -44,5 +44,17 @@ namespace Product_Review_Management
             }
 
         }
+        
+         public void skipRecords(List<Product_review> lpr)
+        {
+            var recordData = (from p in lpr  select p).Skip(5).ToList();
+
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product ID : " + list.ProductID + "UserID : " + list.UserID + "Rating : " + list.Rating + "Review : " + list.Review + "IsLike : " + list.IsLike);
+            }
+
+        }
     }
 }
