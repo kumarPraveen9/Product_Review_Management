@@ -43,8 +43,8 @@ namespace Product_Review_Management
             }*/
             Management mn = new Management();
            // mn.top3Records(pr);
-            mn.SelectRecords(pr);
-
+            //mn.SelectRecords(pr);
+          mn.RetriveRecords(pr);
         }
 
        
