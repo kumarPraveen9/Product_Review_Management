@@ -45,7 +45,8 @@ namespace Product_Review_Management
            // mn.top3Records(pr);
             //mn.SelectRecords(pr);
          // mn.RetriveRecords(pr);
-            mn.SelectiveColumns(pr);
+           // mn.SelectiveColumns(pr);
+             mn.skipRecords(pr);
         }
 
        
