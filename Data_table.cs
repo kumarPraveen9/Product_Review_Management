@@ -48,8 +48,8 @@ namespace Product_Review_Management
             Data_table D = new Data_table();
             // D.DisplayProducts(table);
             // D.Display_IsLike_True(table);
-             D.Display_Average_Rating(table);
-            // D.Display_Review_Nice(table);
+           //  D.Display_Average_Rating(table);
+             D.Display_Review_Nice(table);
            //D.Display_UserId_order(table);
         }
 
